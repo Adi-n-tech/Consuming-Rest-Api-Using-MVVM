@@ -31,7 +31,7 @@ public class RetrofitClient {
         Gson gson = new GsonBuilder().serializeNulls().create();
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl("https://us-central1-dry-fruit-app-2e345.cloudfunctions.net/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(httpClient.build())
                 .build();
